@@ -53,7 +53,7 @@
 
   <script>
     /*
-    DIRECTIONS: Use the insertAdjacentElement() method for the tasks described below. Make all adjustments to the "recap" section
+    DIRECTIONS: Use the insertAdjacentElement() method for the tasks described below. Make all adjustments to the "recap" section.
     */
 
     /* 
@@ -65,24 +65,24 @@
     orderedList.insertAdjacentElement('beforebegin', p1);
 
     /* 
-    PROBLEM 2: Add a list item containing a topic you have learned in the past 2 weeks to the first position
+    PROBLEM 2: Add a list item to the existing ordered list containing a coding concept you have recently learned to the first position
     */
     const topic = document.createElement('li');
     topic.textContent = "Topic title";
     orderedList.insertAdjacentElement('afterbegin', topic);
 
     /* 
-   PROBLEM 3: Add a list item containing a topic you have learned in the past 2 weeks to the last position
+   PROBLEM 3: Add another list item to the ordered list containing another coding topic you have recently learned to the last position
    */
     const topic2 = document.createElement('li');
     topic2.textContent = "Topic title";
     orderedList.insertAdjacentElement('beforeend', topic2);
 
     /* 
-    PROBLEM 4: After the list items but before the p element, add a btn with the caption "done"
+    PROBLEM 4: After the list items but before the p element, add a button with the text "Done"
     */
     const button = document.createElement('button');
-    button.innerText = "demo";
+    button.innerText = "Done";
     orderedList.insertAdjacentElement('afterend', button);
 
     /*
