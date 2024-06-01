@@ -70,7 +70,12 @@
     /* 
     PROBLEM 2: Add a list item to the existing ordered list containing a coding concept you have recently learned to the first position
     */
-    //ENTER YOUR CODE HERE
+    const orderedList = recap.querySelector('ol');
+    const listItem = document.createElement('li');
+
+    listItem.textContent = `Insert element to beginning, as sibling, with 'beforebegin'`;
+    orderedList.insertAdjacentElement('afterbegin', listItem);
+    console.log('2', orderedList);
 
     /* 
    PROBLEM 3: Add another list item to the ordered list containing another coding topic you have recently learned to the last position
