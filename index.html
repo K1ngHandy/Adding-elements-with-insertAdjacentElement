@@ -59,7 +59,13 @@
     /* 
     PROBLEM 1: In the "recap" section, insert a p element with the text "List begins here" after the header and before the list items
     */
-    //ENTER YOUR CODE HERE
+    const recap = document.querySelector('.recap');
+    const h3Tag = recap.querySelector('h3');
+    const pTag = document.createElement('p');
+    
+    pTag.textContent = "List begins here";
+    h3Tag.insertAdjacentElement('afterend', pTag);
+    console.log('1', recap);
 
     /* 
     PROBLEM 2: Add a list item to the existing ordered list containing a coding concept you have recently learned to the first position
