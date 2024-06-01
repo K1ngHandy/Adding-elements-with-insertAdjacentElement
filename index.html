@@ -64,8 +64,8 @@
     const pTag = document.createElement('p');
     
     pTag.textContent = "List begins here";
+    
     h3Tag.insertAdjacentElement('afterend', pTag);
-    console.log('1', recap);
 
     /* 
     PROBLEM 2: Add a list item to the existing ordered list containing a coding concept you have recently learned to the first position
@@ -74,13 +74,17 @@
     const listItem = document.createElement('li');
 
     listItem.textContent = `Insert element to beginning, as sibling, with 'beforebegin'`;
+    
     orderedList.insertAdjacentElement('afterbegin', listItem);
-    console.log('2', orderedList);
 
     /* 
    PROBLEM 3: Add another list item to the ordered list containing another coding topic you have recently learned to the last position
    */
-    //ENTER YOUR CODE HERE
+    const lastItem = document.createElement('li');
+
+    lastItem.textContent = `Insert element to last position using 'beforeend'`;
+    
+    orderedList.insertAdjacentElement('beforeend', lastItem);
 
     /* 
     PROBLEM 4: After the list items but before the p element, add a button with the text "Done"
