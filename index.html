@@ -106,12 +106,16 @@
     const section = document.querySelector('.recap'); // add class selector (.)
     const parentElement = document.createElement('div');
     const btn = document.createElement('button');
+    const btn2 = document.createElement('button'); // create 2nd button
 
     btn.innerHTML = 'click me';
     btn.classList.add('btn');
 
-    parentElement.insertAdjacentElement('beforebegin', btn); // remove capital B
-    parentElement.insertAdjacentElement('afterend', btn);
+    btn2.innerHTML = 'click me also'; // add content to 2nd button
+    btn2.classList.add('btn'); // add 'btn' class to 2nd button
+
+    parentElement.appendChild(btn); // remove capital B; change to appendChild
+    parentElement.appendChild(btn2); // add 2 to variable; change to appendChild
     section.insertAdjacentElement('beforebegin', parentElement); // add semicolon, correct beforebegin typo
 
   </script>
